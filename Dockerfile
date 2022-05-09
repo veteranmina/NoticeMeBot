@@ -1,16 +1,17 @@
 FROM node:16-alpine
 
+ENV NODE_ENV=development
+
+WORKDIR /noticemebot
+
 RUN apk update --no-cache && \
-    apk add git && \
-    apk add npm
+    apk add git
 
 RUN cd / && \
     git clone https://github.com/veteranmina/noticemebot && \
     cd noticemebot && \
     npm i && \
     npm run build
-
-WORKDIR /noticemebot
 
 ADD docker-entrypoint.sh /
 
