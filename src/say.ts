@@ -2,16 +2,16 @@ import { Message } from "discord.js"
 import { IHandle } from "./lib/interfaces"
 import * as log from './lib/console'
 
-import * as dm from './responders/dm'
 import * as ping from './responders/ping'
+import * as dm from './responders/dm'
 
 export class Handler {
 
   handlers: IHandle[] = [];
 
   constructor() {
-    this.handlers.push({matcher: dm.matcher, handle: dm.handle}); // direct message
-    this.handlers.push({matcher: ping.matcher, handle: ping.handle}); // ping pong
+    this.handlers.push({matcher: ping.matcher, handle: ping.handle}); // bot ping
+    this.handlers.push({matcher: dm.matcher, handle: dm.handle}); // version
   }
 
   respond(m: Message): void {
