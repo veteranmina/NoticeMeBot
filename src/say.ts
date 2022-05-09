@@ -11,7 +11,7 @@ export class Handler {
 
   constructor() {
     this.handlers.push({matcher: dm.matcher, handle: dm.handle}); // direct message
-    this.handlers.push({matcher: ping.matcher, handle: dm.handle}); // ping pong
+    this.handlers.push({matcher: ping.matcher, handle: ping.handle}); // ping pong
   }
 
   respond(m: Message): void {
