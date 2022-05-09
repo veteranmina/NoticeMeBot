@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd /noticemebot
-npm run
+npm run serve
