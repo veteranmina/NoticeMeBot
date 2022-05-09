@@ -1,4 +1,4 @@
-import { Message, MessageEmbed } from 'discord.js'
+import { Message } from 'discord.js'
 import * as log from '../lib/console'
 
 const seataddr = process.env.APP_URL;
