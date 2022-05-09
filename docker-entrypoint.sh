@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd /noticemebot
+cd /discord-bot
 npm run serve

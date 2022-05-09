@@ -5,11 +5,11 @@ RUN apk update --no-cache && \
 
 RUN cd / && \
     git clone https://github.com/veteranmina/noticemebot && \
-    cd noticemebot && \
+    cd discord-bot && \
     npm i && \
     npm run build
 
-WORKDIR /noticemebot
+WORKDIR /discord-bot
 
 ADD docker-entrypoint.sh /
 
