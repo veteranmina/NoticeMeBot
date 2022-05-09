@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:16.15-slim
 
 RUN apk update --no-cache && \
     apk add git
