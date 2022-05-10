@@ -11,7 +11,7 @@ export class Handler {
 
   constructor() {
     this.handlers.push({matcher: ping.matcher, handle: ping.handle}); // bot ping
-    this.handlers.push({matcher: dm.matcher, handle: dm.handle}); // version
+    this.handlers.push({matcher: dm.matcher, handle: dm.handle}); // private message
   }
 
   respond(m: Message): void {
