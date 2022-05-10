@@ -24,7 +24,7 @@ const client: Client = new Client({
 const handler: Handler = new Handler();
 
 client.on(`ready`, () => {
-  log.info(`ready & authenticated as ${client.user?.tag}`);
+  log.info(`ready & authenticated as ${client.user.tag}`);
 });
 
 client.on(`message`, (msg: Message) => {
