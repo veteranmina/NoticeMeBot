@@ -2,19 +2,25 @@
 
 [![Docker build & Push](https://github.com/veteranmina/noticemebot/actions/workflows/main.yml/badge.svg)](https://github.com/veteranmina/noticemebot/actions/workflows/main.yml)
 
-Current status:
+This bot is created to do one simple thing, notice you when asked "!Notice me Senpai" with a private message.
 
-NPM RUN SERVE in docker-entrypoint.sh fails
+#Available commands:
+```
+!Notice me Senpai - Private messages you with an address set in APP_URL
+!Ping - pong!
+```
 
-/docker-entrypoint.sh:4
-npm run serve
-^^^
-SyntaxError: Unexpected identifier
-at Object.compileFunction (node:vm:352:18)
-at wrapSafe (node:internal/modules/cjs/loader:1033:15)
-at Module._compile (node:internal/modules/cjs/loader:1069:27)
-at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
-at Module.load (node:internal/modules/cjs/loader:981:32)
-at Function.Module._load (node:internal/modules/cjs/loader:822:12)
-at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
-at node:internal/main/run_main_module:17:47
+#Environment variables needed:
+```
+TOKEN - Discord token to authorize bot connection
+
+APP_URL - Web address for bot to relay via private message.
+```
+#Optional variables:
+```
+DISCORDCHAN: Discord channel ID for !Notice me senpai command to listen for
+Note: Not populating this will default to answering all requests
+
+DMLCKCHANNEL: Locks !Notice me senpai to specified Discord channel
+Note: Not populating this will allow bot to listen and answer to other granted channels
+```
