@@ -1,6 +1,6 @@
 FROM node:16.15-alpine
 
-RUN apk update --no-cache && \
+RUN apk update && \
     apk add git
 
 RUN cd / && \
