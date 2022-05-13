@@ -5,12 +5,12 @@ import * as log from './lib/console'
 const token = process.env.TOKEN;
 const app_url = process.env.APP_URL;
 
-if (token === ``) {
+if (token === undefined) {
   log.error(`no discord token found in env. set \`TOKEN\` bye!`);
   process.exit();
 }
 
-if (app_url === ``) {
+if (app_url === undefined) {
   log.error(`no seat address found in env. set \`APP_URL\``);
 }
 
