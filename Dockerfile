@@ -11,6 +11,4 @@ RUN cd / && \
 
 WORKDIR /noticemebot
 
-ADD docker-entrypoint.sh /
-
-CMD [ "/docker-entrypoint.sh" ]
+ENTRYPOINT ["/usr/local/bin/npm", "run", "serve"]
