@@ -7,13 +7,13 @@
   },
   "devDependencies": {
     "@types/node": "^16",
-    "@typescript-eslint/eslint-plugin": "^4.18",
-    "@typescript-eslint/parser": "^4.18",
+    "@typescript-eslint/eslint-plugin": "^5",
+    "@typescript-eslint/parser": "^5",
     "eslint": "^7.22",
-    "typescript": "^4.2"
+    "typescript": "^4.6"
   },
   "dependencies": {
-    "axios": "^0.21",
+    "axios": "^0.27",
     "chalk": "^4.1",
     "cheerio": "*",
     "discord.js": "^13"
