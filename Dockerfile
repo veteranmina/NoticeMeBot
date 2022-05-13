@@ -1,6 +1,6 @@
 FROM node:16.15-alpine
 
-RUN apk update && \
+RUN apk update --no-cache && \
     apk add git
 
 RUN cd / && \
@@ -13,4 +13,5 @@ WORKDIR /noticemebot
 
 ADD docker-entrypoint.sh /
 
-CMD [ "/docker-entrypoint.sh" ]
+CMD ["echo", "Hello, User"]
+#CMD [ "/docker-entrypoint.sh" ]
